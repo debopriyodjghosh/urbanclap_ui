@@ -77,8 +77,12 @@
 }(jQuery));
 
 
-
 $(document).ready(function(){
+
+    var elems = document.querySelectorAll('.sidenav');
+	var instances = M.Sidenav.init(elems, { edge: 'right'});
+	instance.close();
+
     $(window).scroll(function(){
         // sticky navbar on scroll script
         if(this.scrollY > 20){

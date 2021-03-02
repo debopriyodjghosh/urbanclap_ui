@@ -28,7 +28,10 @@ session_start();
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="assets/css/flexslider.css" rel="stylesheet" />
-    <link href="assets/css/style.css" rel="stylesheet" />    
+    <link href="assets/css/style.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href="assets/css/materialize.css" />   
+
+    <script src="assets/js/materialize.js"></script>
  
 </head>
 <body >
@@ -36,18 +39,14 @@ session_start();
  <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                 <a class="navbar-brand" href="#"><img class="logo-custom" src="assets/img/logoz.png" alt=""  /></a>
             </div>
 			
 			
 			
 			
-            <div class="navbar-collapse collapse move-me">
+            <div class="navbar-collapse collapse hide-on-med-and-only">
                 <ul class="nav navbar-nav navbar-right">
                     <li ><a href="#home">HOME</a></li>
                      <li><a  href="#features-sec"  data-toggle="modal" data-target="#an">
@@ -73,6 +72,24 @@ session_start();
            
         </div>
     </div>
+
+    <ul id="slide-out" class="sidenav">
+	    <a href="#" class="sidenav-close"><i class="fa fa-close"></i></a>
+        <li style="margin-top: 5rem;"><a href="#home">HOME</a></li>
+                     <li><a  href="#features-sec"  data-toggle="modal" data-target="#an">
+                                ADMIN
+                            </a></li>
+                    <li><a  href="#features-sec"  data-toggle="modal" data-target="#su">
+                                SIGN UP
+                            </a></li>
+                     <li><a  href="#features-sec" data-toggle="modal" data-target="#ln">
+                                SIGN IN
+                            </a></li>
+                            <li><a  href="#features-sec" data-toggle="modal" data-target="#aa">
+                                Join Us
+                            </a></li>
+					  <li><a href="#course-sec">CONTACT US</a></li>
+	</ul>
      
  
 	   
@@ -588,6 +605,16 @@ session_start();
      <!-- FOOTER SECTION END-->
    
     <!--  Jquery Core Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            
+            var instances = M.Sidenav.init(elems, { edge: 'right'});
+            
+            console.log(elems,instances);
+            instance.close();
+        });
+    </script>
     <script src="assets/js/jquery-1.10.2.js"></script>
     <!--  Core Bootstrap Script -->
     <script src="assets/js/bootstrap.js"></script>
@@ -598,6 +625,6 @@ session_start();
     <!--  Scroll Scripts --> 
     <script src="assets/js/jquery.easing.min.js"></script>
     <!--  Custom Scripts --> 
-         <script src="assets/js/custom.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>

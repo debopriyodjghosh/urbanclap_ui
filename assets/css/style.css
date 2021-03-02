@@ -34,10 +34,10 @@ body {
 }
 
 #menu {
-    background-color: rgba(28, 43, 75, 1);
+    background-color: #dc143c;
     color: #fff;
     font-size: 12px;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 1px;
     min-height: 70px;
 }
@@ -353,7 +353,7 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    /* padding: 30px 0; */
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -972,10 +972,11 @@ footer span a:hover{
 }
 .services ul li a{
     text-decoration: none;
-    padding: 0 5.5rem;
+    padding: 0 2.4vw;
     display: block;
 }
 .services ul li a .icon{
+    margin-left: 25%;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -1058,13 +1059,12 @@ ul li .name {
 
 @media (min-width: 769px) {
     .services {
-        width: 70vw !important;
+        width: 50vw !important;
     }
 
     .services ul {
         list-style: none;
         padding: 2.5rem;
-        margin: 0;
         margin-left: -13px;
         display: flex;
         flex-direction: column;
@@ -1073,7 +1073,7 @@ ul li .name {
     }
 
     .services ul li {
-        width: 100%;
+        width: 10vw;
         left: -10px!important;
     }
 
@@ -1083,8 +1083,11 @@ ul li .name {
         height: 5rem;
         color: white;
         text-decoration: none;
-        filter: grayscale(100%) opacity(1);
         transition: var(--transition-speed);
+      }
+
+      .icon i{
+          color: #dc143c;
       }
 
       .services ul {
@@ -1094,4 +1097,83 @@ ul li .name {
       .services ul li {
         justify-content: center;
       }
+
+      .sidenav-trigger {
+          display: none;
+      }
+}
+
+@media (max-width: 768px) {
+    /* .services {
+        width: 50vw !important;
+    }
+
+    .services ul {
+        list-style: none;
+        padding: 2.5rem;
+        margin-left: -13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    } */
+
+    .services ul li {
+        width: 25vw;
+        left: -10px!important;
+        height: 20%;
+    }
+
+    .row_one .services {
+        top: 50%;
+        left: 30%;
+        height: 65vh;
+    }
+
+    .row2 .services {
+        left: auto;
+        right: 0%;
+        top: 50%;
+        height: 65vh;
+    }
+/* 
+    .services ul li a {
+        display: flex; 
+        align-items: center;
+        height: 5rem;
+        color: white;
+        text-decoration: none;
+        transition: var(--transition-speed);
+      }
+
+      .icon i{
+          color: #dc143c;
+      }
+
+      .services ul {
+        flex-direction: row;
+      }
+    
+      .services ul li {
+        justify-content: center;
+      } */
+}
+
+.sidenav-trigger {
+    float: right;
+    margin: 1.75rem;
+    font-size: 2.5rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.sidenav-close {
+    float: right;
+    margin: 1rem;
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
 }
