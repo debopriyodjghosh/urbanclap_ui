@@ -11,18 +11,20 @@ if(!$_SESSION['admin_username'])
 
 <?php
 include("db_conection.php");
-if(isset($_POST['item_save']))
+
+if(isset($_POST['service_save']))
 {
-$item_name = $_POST['item_name'];
-$item_price = $_POST['item_price'];
+$s_name = $_POST['s_name'];
+$s_price = $_POST['s_price'];
+$s_desc = $_POST['s_desc'];
 
  
- $check_item="select * from items WHERE item_name='$item_name'";
+ $check_item="select * from service WHERE s_name='$s_name'";
     $run_query=mysqli_query($dbcon,$check_item);
 
     if(mysqli_num_rows($run_query)>0)
     {
-echo "<script>alert('Item is already exist, Please try another one!')</script>";
+echo "<script>alert('Service is already exist, Please try another one!')</script>";
  echo"<script>window.open('index.php','_self')</script>";
 exit();
     }
@@ -31,7 +33,7 @@ $imgFile = $_FILES['item_image']['name'];
 $tmp_dir = $_FILES['item_image']['tmp_name'];
 $imgSize = $_FILES['item_image']['size'];
 
-$upload_dir = 'item_images/';
+$upload_dir = 'service_images/';
 $imgExt = strtolower(pathinfo($imgFile,PATHINFO_EXTENSION)); 
 $valid_extensions = array('jpeg', 'jpg', 'png', 'gif'); 
 $itempic = rand(1000,1000000).".".$imgExt;
@@ -43,7 +45,7 @@ $itempic = rand(1000,1000000).".".$imgExt;
 		
 				if($imgSize < 5000000)				{
 					move_uploaded_file($tmp_dir,$upload_dir.$itempic);
-					$saveitem="insert into items (item_name,item_price,item_image,item_date) VALUE ('$item_name','$item_price','$itempic',CURDATE())";
+					$saveitem="insert into service (s_name,s_price,s_desc,s_img) VALUE ('$s_name','$s_price','$s_desc','$itempic')";
 					mysqli_query($dbcon,$saveitem);
 					 echo "<script>alert('Data successfully saved!')</script>";				
 					 echo "<script>window.open('items.php','_self')</script>";
