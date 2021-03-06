@@ -262,6 +262,7 @@ session_start();
 <!-- home section start -->
 
 
+
 <!--HOME SECTION END-->
 
 
@@ -288,76 +289,285 @@ session_start();
 </div>
 
  <!-- services section start -->
- 
+ <style>body {
+    background-color: #eee
+}
+
+.card {
+    padding: 10px;
+    border: none;
+    cursor: pointer
+}
+
+.card:hover {
+    background-color: #dc143c
+}
+
+.card span {
+    font-size: 14px
+}</style>
+<section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Our Services</h2>
+ <div class="container bg-white mt-5 p-3">
+    <div class="row g-2">
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/sofa.png" width="36" /> </div> <span>Saloon</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/cleaning.png" width="36" /> </div> <span>Cleaning</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/vehiclecare.png" width="36" /> </div> <span>Car Repair</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/electrical.png" width="36" /> </div> <span>Electrician</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/painting.png" width="36" /> </div> <span>Painter</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/plumbing.png" width="36" /> </div> <span>Plumber</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/carpentry.png" width="36" /> </div> <span>Carpenter</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/laundry.png" width="36" /> </div> <span>Laundry</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/interiordesign.png" width="36" /> </div> <span>Interior design</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/cockroach.png" width="36" /> </div> <span>Pest control</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/appliances.png" width="36" /> </div> <span>AC Repair</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/home-spa2.png" width="36" /> </div> <span>Massage</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</section>
 
 
     
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">About me</h2>
+            <h2 class="title">Our Story</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="assets/img/profile-1.jpeg" alt="">
+                    <img src="assets/img/profile-1.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Prakash and I'm a <span class="typing-2"></span></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque
-                        autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus
-                        accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus
-                        veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis
-                        beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
-                    <a href="#">Download CV</a>
+                    <div class="text">We provide Expert <span class="typing-2"></span></div>
+                    <p><strong>Like all good things, the idea of Urban Services was born out of necessity. 
+                        When you need help with small but important household chores, isn't it practically 
+                        impossible to find trusted providers, who deliver consistently impeccable service, on time?
+                         Yes, that happened with us too. All the time. After trying dozens of other services which 
+                         were just glorified directories, we decided to build Helpr. US is the most convenient 
+                         and hassle free way to get your household work done. With handcrafted mobile solutions, 
+                         unmatched service quality, and background verified providers who are always willing to 
+                         lend a hand, we aim to aid in solving all your household problems with efficiency, ease 
+                         and most importantly, a personal touch.</p>
+                    <a href="#">Contact US</a>
                 </div>
             </div>
         </div>
     </section>
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My teams</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="assets/img/profile-1.jpg" alt="">
+                        <div class="text">Debopriyo Ghosh</div>
+                        <p>Designer & Developer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="assets/img/profile-2.jpg" alt="">
+                        <div class="text">Saikat Jana</div>
+                        <p>Tester & Developer</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="assets/img/profile-3.jpg" alt="">
+                        <div class="text">Mousumi Mondal</div>
+                        <p>Content Creator</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="assets/img/profile-4.jpeg" alt="">
+                        <div class="text">Saradindu Rana</div>
+                        <p>Frontend Devoloper</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="assets/img/profile-5.jpg" alt="">
+                        <div class="text">Srila Parui</div>
+                        <p>Kono Kaj korena</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="testimonials-sec" class="container set-pad" >
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">Customer's Talk </h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s" >
+                     Have a look what our customer's said about us.
+                         </p>
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+
+
+           <div class="row" >
+           
+               
+                 <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
+                     <div class="about-div">
+                  <center>  <img class="img img-circle" src="assets/img/person-1.jpg" style="width:100px;height:100px;" />
+                   <h3 >Paul Rodriguez</h3>
+                 <hr />
+                       
+                   <p >
+                       This company is one of the best in the market they give us
+					   what we need on our skateboards.
+                   </p>
+				   </center>
+                </div>
+                   </div>
+                   
+				   
+				   <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
+                     <div class="about-div">
+                  <center>  <img class="img img-circle" src="assets/img/person-2.jpg" style="width:100px;height:100px;" />
+                   <h3 >Tony <br />Hawk</h3>
+                 <hr />
+                      
+                   <p >
+                       One time I have mistakenly order a wrong set up but luck they immediately notify me.
+                   </p>
+				   </center>
+				   <br />
+               
+                </div>
+                   </div>
+				   
+				   
+				    <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
+                     <div class="about-div">
+                  <center>  <img class="img img-circle" src="assets/img/person-3.png" style="width:100px;height:100px;" />
+                   <h3 >Leticia <br /> Bufoni</h3>
+                 <hr />
+                       
+                   <p >
+                      They are so flexible, approachable they can adjust to my schedule they value trust.
+                   </p>
+				   </center>
+              
+                </div>
+                   </div>
+                 
+				 <div class="col-lg-3  col-md-3 col-sm-3" data-scroll-reveal="enter from the bottom after 0.4s">
+                     <div class="about-div">
+                  <center>  <img class="img img-circle" src="assets/img/person-4.jpg" style="width:100px;height:100px;" />
+                   <h3 >Luan <br />Olivera</h3>
+                 <hr />
+                       
+                     <p>They deliver so fast and the price of the items are low.</p>
+
+				   </center>
+				   <br />
+				   
+              
+                </div>
+                   </div>
+                 
+                 
+               </div>
+             </div>
 
     <!-- skills section start -->
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">My skills</h2>
+            <h2 class="title">Why Choose Us</h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est
-                        recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi.
-                        Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam
-                        alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
-                    <a href="#">Read more</a>
+                    <div class="text">Things that make Urban Services the ideal partner for home maintenance</div>
+                    <p>With over 22,000 trained and police verified professionals, the idea is not just to bring household services to your doosrstep. It's also to do so with the highest quality assurance. Steps that are not exactly a commonplace in the household service space. And it's not just the services that you avail with Helpr. It's also the expert consultation to assess your requirements backed by the fair practices to ensure thos requirements are met. And the best way to enjoy all these and more is with the unique subsctiption plans from Helpr. Offering your services of choice for an entire year and a fair share of cost advantage!</p>
+                    <!--<a href="#">Read more</a>-->
                 </div>
                 <div class="column right">
                     <div class="bars">
                         <div class="info">
-                            <span>HTML</span>
-                            <span>90%</span>
+                            <span>Environment friendly</span>
+                            <span>100%</span>
                         </div>
                         <div class="line html"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>CSS</span>
-                            <span>60%</span>
+                            <span>Satisfied Homes</span>
+                            <span>23,000 +</span>
                         </div>
                         <div class="line css"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>JavaScript</span>
-                            <span>80%</span>
+                            <span>In-house Professionals</span>
+                            <span>30,000 +</span>
                         </div>
                         <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>PHP</span>
-                            <span>50%</span>
+                            <span> Best Startup Award </span>
+                            <span>100%</span>
                         </div>
                         <div class="line php"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>MySQL</span>
+                            <span>Reasonable Pricing</span>
                             <span>70%</span>
                         </div>
                         <div class="line mysql"></div>
@@ -368,78 +578,110 @@ session_start();
     </section>
 
     <!-- teams section start -->
-    <section class="teams" id="teams">
+    
+            
+<section class="teams" id="teams">
         <div class="max-width">
-            <h2 class="title">My teams</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-1.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-2.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-3.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-4.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Someone name</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+            <h2 class="title">Our Services</h2>
+ <div class="container bg-white mt-5 p-3">
+    <div class="row g-2">
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/automation.png" width="36" /> </div> <span>Automation</span>
             </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/computer_repair.png" width="36" /> </div> <span>Computer Repair</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/relocation.png" width="36" /> </div> <span>Relocation</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/offer3.png" width="36" /> </div> <span>Maintainence</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/mansion.png" width="36" /> </div> <span>Mason</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/clean4.png" width="36" /> </div> <span>Cleaning</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/Foaming.png" width="36" /> </div> <span>Foaming</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/Dusting.png" width="36" /> </div> <span>Dusting</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/installation.png" width="36" /> </div> <span>Installation</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/fridge.png" width="36" /> </div> <span>Fridge Repair</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/washing.png" width="36" /> </div> <span>Washing</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card text-center">
+                <div class="image"> <img src="assets/img/Mopping.png" width="36" /> </div> <span>Mopping</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</section>
         </div>
     </section>
 
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contact me</h2>
+            <h2 class="title">Contact Us</h2>
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga
-                        corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                    <p> Urban Services is the most convenient and hassle free way to get your household work done. With handcrafted mobile solutions, unmatched service quality, and background verified providers who are always willing to lend a hand, we aim to aid in solving all your household problems with efficiency, ease and most importantly, a personal touch.</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
                             <div class="info">
                                 <div class="head">Name</div>
-                                <div class="sub-title">Prakash Shahi</div>
+                                <div class="sub-title">Debopriyo Ghosh</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
                                 <div class="head">Address</div>
-                                <div class="sub-title">Surkhet, Nepal</div>
+                                <div class="sub-title">Heaven, MCU</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">abc@gmail.com</div>
+                                <div class="sub-title">donotreply@gmail.com</div>
                             </div>
                         </div>
                     </div>
