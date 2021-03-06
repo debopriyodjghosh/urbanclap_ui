@@ -30,13 +30,7 @@ extract($edit_row);
 include "nav.php";?>
 
         <div id="page-wrapper">
-
-
-
-
-
-
-            <div id="my-carousel" class="carousel slide hero-slide hidden-xs" data-ride="carousel">
+    <div id="my-carousel" class="carousel slide hero-slide hidden-xs" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#my-carousel" data-slide-to="0" class="active"></li>

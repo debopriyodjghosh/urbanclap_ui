@@ -17,6 +17,13 @@
     <link rel="stylesheet" type="text/css" href="css/local.css" />
     <link rel="stylesheet" href="css/style.css">
 
+    <!--search-->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <link href = "css/jquery-ui.css" rel = "stylesheet">
+
 </head>
 
 <body>
