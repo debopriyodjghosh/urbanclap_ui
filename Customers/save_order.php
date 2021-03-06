@@ -1,6 +1,8 @@
 
 <?php
-include("db_conection.php");
+#include("db_conection.php");
+$dbcon=mysqli_connect("localhost","root","");
+mysqli_select_db($dbcon,"urbanclap");
 if(isset($_POST['order_save']))
 {
 

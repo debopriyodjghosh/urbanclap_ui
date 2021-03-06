@@ -11,3 +11,4 @@ try {
 } catch (PDOException $e) {
 	echo $e->getMessage();
 }
+$connect = new PDO("mysql:host=localhost;dbname=urbanclap", "root", "");

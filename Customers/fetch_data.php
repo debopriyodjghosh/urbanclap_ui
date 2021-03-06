@@ -1,7 +1,5 @@
 <?php
-#include('config.php');
-
-$connect = new PDO("mysql:host=localhost;dbname=urbanclap", "root", "");
+include('config.php');
 
 if(isset($_POST["action"]))
 {
@@ -26,17 +24,12 @@ if(isset($_POST["action"]))
 		$query .= "
 		AND sp_city IN('".$brand_filter."')
 		";
-	}
-
-	
+	}?><?php
 	$statement = $connect->prepare($query);
 	$statement->execute();
 	$result = $statement->fetchAll();
 	$total_row = $statement->rowCount();
-	$output = '';
-
-	#echo $query;
-	
+	$output = '';	
 	if($total_row > 0)
 	{
 		foreach($result as $row)
@@ -65,6 +58,12 @@ if(isset($_POST["action"]))
 		$output = '<h3>No Data Found</h3>';
 	}
 	echo $output;//add pagination
+	
 }
-
 ?>
+</div>
+
+</div>
+</div>
+
+			
